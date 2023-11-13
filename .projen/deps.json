@@ -6,7 +6,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^16",
+      "version": "^18",
       "type": "build"
     },
     {
@@ -20,7 +20,15 @@
       "type": "build"
     },
     {
-      "name": "eslint-import-resolver-node",
+      "name": "commitizen",
+      "type": "build"
+    },
+    {
+      "name": "cz-customizable",
+      "type": "build"
+    },
+    {
+      "name": "eslint-config-prettier",
       "type": "build"
     },
     {
@@ -29,6 +37,10 @@
     },
     {
       "name": "eslint-plugin-import",
+      "type": "build"
+    },
+    {
+      "name": "eslint-plugin-prettier",
       "type": "build"
     },
     {
@@ -73,12 +85,11 @@
       "type": "build"
     },
     {
-      "name": "projen",
+      "name": "prettier",
       "type": "build"
     },
     {
-      "name": "standard-version",
-      "version": "^9",
+      "name": "projen",
       "type": "build"
     },
     {
@@ -95,12 +106,12 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.1.0",
+      "version": "^2.103.0",
       "type": "peer"
     },
     {
       "name": "constructs",
-      "version": "^10.0.5",
+      "version": "^10.3.0",
       "type": "peer"
     }
   ],

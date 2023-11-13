@@ -1,0 +1,44 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.212.0/containers/javascript-node
+{
+  "name": "AWS CDK",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "20-bullseye"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "git.enableCommitSigning": true,
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "firsttris.vscode-jest-runner",
+        "amazonwebservices.aws-toolkit-vscode",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "steoates.autoimport",
+        "aaron-bond.better-comments",
+        "mikestead.dotenv",
+        "andys8.jest-snippets",
+        "yzhang.markdown-all-in-one",
+        "christian-kohler.npm-intellisense",
+        "devadvice.serverlessconsole",
+        "Gruntfuggly.todo-tree",
+        "vscode-icons-team.vscode-icons",
+        "redhat.vscode-yaml"
+      ]
+    }
+  },
+  "mounts": [
+    "source=${env:HOME}${env:USERPROFILE}/.ssh,target=/home/node/.ssh,type=bind"
+  ],
+  "remoteUser": "node",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  }
+}

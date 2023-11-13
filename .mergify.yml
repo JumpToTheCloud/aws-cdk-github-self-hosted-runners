@@ -24,3 +24,28 @@ pull_request_rules:
       - -label~=(do-not-merge)
       - status-success=build
       - status-success=package-js
+  - name: Automate upgrade packages
+    actions:
+      label:
+        add:
+          - upgraded
+      delete_head_branches: {}
+      queue:
+        method: squash
+        name: default
+    conditions:
+      - label=upgraded
+      - -label~=(do-not-merge)
+      - status-success=build
+      - status-success=package-js
+  - name: Automatatic merge with review label
+    actions:
+      delete_head_branches: {}
+      queue:
+        method: squash
+        name: default
+    conditions:
+      - label=reviewed
+      - -label~=(do-not-merge)
+      - status-success=build
+      - status-success=package-js
