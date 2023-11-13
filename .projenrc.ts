@@ -13,7 +13,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl:
     'git@github.com:JumpToTheCloud/aws-cdk-github-self-hosted-runners.git',
   prettier: true,
-  keywords: ['aws', 'cdk', 'codestarconnection'],
+  keywords: ['aws', 'cdk', 'github', 'self hosted runner'],
   prettierOptions: {
     settings: {
       trailingComma: TrailingComma.ES5,
