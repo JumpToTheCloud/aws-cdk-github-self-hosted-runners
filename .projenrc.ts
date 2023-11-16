@@ -73,7 +73,6 @@ project.github?.mergify?.addRule({
     label: {
       add: ['upgraded'],
     },
-    ['delete_head_branches']: {},
     queue: {
       method: 'squash',
       name: 'default',
@@ -88,9 +87,8 @@ project.github?.mergify?.addRule({
 });
 
 project.github?.mergify?.addRule({
-  name: 'Automatatic merge with review label',
+  name: 'Automatic merge with review label',
   actions: {
-    ['delete_head_branches']: {},
     queue: {
       method: 'squash',
       name: 'default',
