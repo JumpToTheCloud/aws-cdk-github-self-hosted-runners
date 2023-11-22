@@ -13,3 +13,5 @@ RUN pip install mkdocs \
     pip install mike 
 
 RUN npm install -g aws-cdk
+RUN npm i -g aws-cdk-local
+RUN pip install awscli-local
